@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Navi Merch</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="simulation.css">
+        <script src="simulation.js"></script>
+        <link rel="icon" href="img/favicon.ico">
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1>NAVI MERCHANDISE</h1>
+            </div>
+            <div class="navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Shop</span></a>
+                        <div class="sub-nav">
+                            <ul>
+                                <li><a href="cblack-gold.html">Clothes</li>
+                                <li><a href="mwhite-gold.html">Mug</li>
+                                <li><a href="twhite-gold.html">Bag</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="simulation.html">Discount</a></li>
+                </ul>
+            </div>
+            <div class="section">
+                <div class="main">
+                    <div class="section">
+                        <div class="col-8">
+                            <div class="fitbox">
+                                <h1>Cek Ketersediaan Diskon</h1><br>
+                                <form>
+                                    <table>
+                                        <tr height="50">
+                                            <td colspan="2">
+                                                <label>Product</label><br>
+                                                <select id="varpro" style="width: 100%;">
+                                                    <option value="0">---Variant---</option>
+                                                    <option value="1">Clothes (Black-White)</option>
+                                                    <option value="2">Clothes (White-Gold)</option>
+                                                    <option value="3">Mug (White-Gold)</option>
+                                                    <option value="4">Mug (White-White)</option>
+                                                    <option value="5">Totebag (White-Gold)</option>
+                                                    <option value="6">Totebag (White-White)</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr height="50">
+                                            <td>
+                                                <label>Provinsi</label><br>
+                                                <input class="variant" type="text" id="wil1">
+                                            </td>
+                                            <td>
+                                                <label>Kabupaten</label><br>
+                                                <input class="variant" type="text" id="wil2">
+                                            </td>
+                                        </tr>
+                                        <tr height="50">
+                                            <td colspan="2">
+                                            <button class="button" type="button" onclick="cek()">
+                                            <b>CHECK</b>
+                                            </button>
+                                            </td>
+                                        </tr>
+                                        <tr height="50">
+                                            <td colspan="2">
+                                            <p id="in">Diskon :</p>
+                                            <p id="get"></p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-4" style="border-left: solid #1C1C1C;">
+                            <div class="fitbox">
+                                <h1>Cek Product</h1><br>
+                                <div class="dropdown">
+                                    <button class="droplink">Variant</button>
+                                    <div class="variant-content">
+                                        <a href="cblack-gold.html">Clothes (Black-Gold)</a>
+                                        <a href="cwhite-gold.html">Clothes (White-Gold)</a>
+                                        <a href="mwhite-gold.html">Mug (White-Gold)</a>
+                                        <a href="mwhite-white.html">Mug (White-White)</a>
+                                        <a href="twhite-gold.html">Totebag (White-Gold)</a>
+                                        <a href="twhite-white.html">Totebag (White-White)</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fitbox"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <p>Design by <span style="color: #FFB606;">Putu Angga Arya Santika</span></p>
+            </div>
+        </div>
+    </body>
+</html>
